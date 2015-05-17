@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21-feb-2012 17:01:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="modelos.Jugadores" table="jugadores" catalog="bln_basket">
+        <id name="idJugador" type="java.lang.Integer">
+            <column name="id_jugador" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="20" />
+        </property>
+        <property name="apellidos" type="string">
+            <column name="apellidos" length="20" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="20" />
+        </property>
+        <property name="social" type="string">
+            <column name="social" length="20" />
+        </property>
+        <property name="posicion" type="string">
+            <column name="posicion" length="20" />
+        </property>
+        <property name="altura" type="string">
+            <column name="altura" length="20" />
+        </property>
+        <property name="edad" type="java.lang.Integer">
+            <column name="edad" />
+        </property>
+        <property name="idCaracteristicasFk" type="java.lang.Integer">
+            <column name="id_caracteristicas_fk" />
+        </property>
+        <property name="idEquipoFk" type="java.lang.Integer">
+            <column name="id_equipo_fk" />
+        </property>
+        <property name="sueldo" type="java.lang.Integer">
+            <column name="sueldo" />
+        </property>
+    </class>
+</hibernate-mapping>

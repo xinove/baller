@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21-feb-2012 17:01:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="modelos.Nacionalidad" table="nacionalidad" catalog="bln_basket">
+        <id name="idNacionalidad" type="java.lang.Integer">
+            <column name="id_nacionalidad" />
+            <generator class="identity" />
+        </id>
+        <property name="nacionalidad" type="string">
+            <column name="nacionalidad" length="30" />
+        </property>
+        <property name="pais" type="string">
+            <column name="pais" length="30" />
+        </property>
+        <property name="frecuencia" type="java.lang.Integer">
+            <column name="frecuencia" />
+        </property>
+    </class>
+</hibernate-mapping>

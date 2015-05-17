@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Baller 4ever</display-name>
+	<!-- utilizamos el servlet de spring MVC -->
+	<servlet>
+		<servlet-name>baller4everSpringMVC</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/baller4everSpringMVC-servlet.xml</param-value>
+	</context-param>
+	<!-- hacemos que la extension / utilice el servlet de spring -->
+	<servlet-mapping>
+		<servlet-name>baller4everSpringMVC</servlet-name>
+		<url-pattern>/baller4ever/*</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/jsp/home.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

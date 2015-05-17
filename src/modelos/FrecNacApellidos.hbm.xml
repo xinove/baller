@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21-feb-2012 17:01:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="modelos.FrecNacApellidos" table="frec_nac_apellidos" catalog="bln_basket">
+        <id name="idFrecNacApellidos" type="java.lang.Integer">
+            <column name="id_frec_nac_apellidos" />
+            <generator class="identity" />
+        </id>
+        <property name="idApellidosFk" type="java.lang.Integer">
+            <column name="id_apellidos_fk" />
+        </property>
+        <property name="idNacionalidadFk" type="java.lang.Integer">
+            <column name="id_nacionalidad_fk" />
+        </property>
+        <property name="frecuenciaApellido" type="big_decimal">
+            <column name="frecuencia_apellido" precision="2" />
+        </property>
+    </class>
+</hibernate-mapping>

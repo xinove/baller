@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">toor</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bln_basket</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <mapping resource="modelos/FrecuenciaNacionalidad.hbm.xml" />
+        <mapping resource="modelos/Usuarios.hbm.xml" />
+        <mapping resource="modelos/Equipos.hbm.xml" />
+        <mapping resource="modelos/FrecNacApellidos.hbm.xml" />
+        <mapping resource="modelos/Caracteristicas.hbm.xml" />
+        <mapping resource="modelos/Nacionalidad.hbm.xml" />
+        <mapping resource="modelos/Apellidos.hbm.xml" />
+        <mapping resource="modelos/Nombres.hbm.xml" />
+        <mapping resource="modelos/FrecNacNombre.hbm.xml" />
+        <mapping resource="modelos/Jugadores.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
