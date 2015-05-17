@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21-feb-2012 17:01:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="modelos.Caracteristicas" table="caracteristicas" catalog="bln_basket">
+        <id name="idCaracteristica" type="java.lang.Integer">
+            <column name="id_caracteristica" />
+            <generator class="identity" />
+        </id>
+        <property name="tecnica" type="java.lang.Integer">
+            <column name="tecnica" />
+        </property>
+        <property name="velocidad" type="java.lang.Integer">
+            <column name="velocidad" />
+        </property>
+        <property name="rebote" type="java.lang.Integer">
+            <column name="rebote" />
+        </property>
+        <property name="pase" type="java.lang.Integer">
+            <column name="pase" />
+        </property>
+        <property name="tiro" type="java.lang.Integer">
+            <column name="tiro" />
+        </property>
+        <property name="fuerza" type="java.lang.Integer">
+            <column name="fuerza" />
+        </property>
+        <property name="asistencia" type="java.lang.Integer">
+            <column name="asistencia" />
+        </property>
+        <property name="robo" type="java.lang.Integer">
+            <column name="robo" />
+        </property>
+        <property name="estrategia" type="java.lang.Integer">
+            <column name="estrategia" />
+        </property>
+        <property name="idJugadorFk" type="java.lang.Integer">
+            <column name="id_jugador_fk" />
+        </property>
+    </class>
+</hibernate-mapping>

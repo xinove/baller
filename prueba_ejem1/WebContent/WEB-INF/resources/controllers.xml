@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="homeController" class="controller.HomeController" />
+	<bean id="nuevoUsuarioController" class="controller.HomeController" />
+	<bean id="usuarioController" class="controller.UsuarioController" />
+	<bean id="equipoController" class="controller.EquipoController" />
+</beans>  
+        

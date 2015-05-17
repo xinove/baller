@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-name="caracteristicas"
+		match-catalog="bln_basket">
+	</table-filter>
+	<table-filter match-name="equipos" match-catalog="bln_basket"></table-filter>
+	<table-filter match-name="jugadores" match-catalog="bln_basket"></table-filter>
+	<table-filter match-name="usuarios" match-catalog="bln_basket"></table-filter>
+	<table-filter match-name="apellidos" match-catalog="bln_basket"></table-filter>
+	<table-filter match-name="frec_nac_apellidos"
+		match-catalog="bln_basket">
+	</table-filter>
+	<table-filter match-name="frecuencia_nacionalidad"
+		match-catalog="bln_basket">
+	</table-filter>
+	<table-filter match-name="nacionalidad"
+		match-catalog="bln_basket">
+	</table-filter>
+	<table-filter match-name="nombres" match-catalog="bln_basket"></table-filter>
+	<table-filter match-name="frec_nac_nombre"
+		match-catalog="bln_basket">
+	</table-filter>
+</hibernate-reverse-engineering>

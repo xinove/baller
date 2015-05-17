@@ -1,0 +1,4 @@
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://ec2-54-243-49-204.compute-1.amazonaws.com:5432/damst56efi3fr1
+jdbc.username=rbqukuuqzqeero
+jdbc.password=L457AalQ6OFRJnxi0jb3h3pZz_
